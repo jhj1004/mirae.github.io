@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JUST 쇼핑몰</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="header">
+            <a href="#" class="logo"><img src="./images/logo.png" alt="로고"></a>
+            <nav id="gnb">
+                <ul class="menu">
+                    <li>
+                        <a href="#" class="dep1">탑</a>
+                        <ul class="sub">
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">니트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dep1">아우터</a>
+                        <ul class="sub">
+                            <li><a href="#">자켓</a></li>
+                            <li><a href="#">코트</a></li>
+                            <li><a href="#">가디건</a></li>
+                            <li><a href="#">머플러</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dep1">팬츠</a>
+                        <ul class="sub">
+                            <li><a href="#">청바지</a></li>
+                            <li><a href="#">짧은바지</a></li>
+                            <li><a href="#">긴바지</a></li>
+                            <li><a href="#">레깅스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dep1">악세서리</a>
+                        <ul class="sub">
+                            <li><a href="#">귀고리</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="slide">
+            <ul class="ban">
+                <li><img src="./images/ban1.jpg" alt="청순해지는 패션 아이템"></li>
+                <li><img src="./images/ban2.jpg" alt="폼나는 아우터아이템"></li>
+                <li><img src="./images/ban3.jpg" alt="감각이 돋보이도록"></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="col4">
+                <input type="radio" name="rdo1" id="ra1" class="raItem">
+                <input type="radio" name="rdo1" id="ra2" class="raItem">
+                <div class="tabBtnBox">
+                    <label for="ra1" class="tabBtn item1">공지사항</label>
+                    <label for="ra2" class="tabBtn item2">갤러리</label>
+                </div>
+                <!--ul.tabConBox>li.tabCon.item$*2-->
+                <ul class="tabConBox">
+                    <li class="tabCon item1">
+                        <!--table>tr*5>td*2
+                        table.noti>thead(tr>th*2)+tbody(tr*4>td*2)-->
+                        <table class="noti">
+                            <thead>
+                                <tr>
+                                    <th class="nTit">제목</th>
+                                    <th class="nDate">작성일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="nTit"><a href="#popup">공지사항1입니다</a></td>
+                                    <td class="nDate">2021-5-15</td>
+                                </tr>
+                                <tr>
+                                    <td class="nTit">공지사항2입니다</td>
+                                    <td class="nDate">2021-5-14</td>
+                                </tr>
+                                <tr>
+                                    <td class="nTit">공지사항3입니다</td>
+                                    <td class="nDate">2021-5-13</td>
+                                </tr>
+                                <tr>
+                                    <td class="nTit">공지사항4입니다</td>
+                                    <td class="nDate">2021-5-12</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </li>
+                    <!--공지사항 -->
+                    <li class="tabCon item2">
+                        <ul class="gal">
+                            <li><img src="./images/gal1.jpg" alt="갤러리1"></li>
+                            <li><img src="./images/gal2.jpg" alt="갤러리2"></li>
+                            <li><img src="./images/gal3.jpg" alt="갤러리3"></li>
+                        </ul>
+                    </li>
+                    <!--갤러리-->
+                </ul>
+
+            </div><!-- 공지사항,갤러리-->
+            <div class="col4">
+                <h3 class="conTitle">배너</h3>
+                <div class="banImg"><img src="./images/banner.jpg" alt="배너"></div>
+            </div><!-- 배너-->
+            <div class="col4">
+                <h3 class="conTitle">바로가기</h3>
+                <!--ul.shortcut>li.col6*4>a>img+span.shortcutTxt-->
+                <ul class="shortcut">
+                    <li class="col6">
+                        <a href="#">
+                            <img src="./images/fashionItem1.png" alt="탑">
+                            <span class="shortcutTxt">탑</span>
+                        </a>
+                    </li>
+                    <li class="col6"><a href="#"><img src="./images/fashionItem2.png" alt="아우터"><span class="shortcutTxt">아우터</span></a></li>
+                    <li class="col6"><a href="#"><img src="./images/fashionItem3.png" alt="팬츠"><span class="shortcutTxt">팬츠</span></a></li>
+                    <li class="col6"><a href="#"><img src="./images/fashionItem4.png" alt="악세사리"><span class="shortcutTxt">악세사리</span></a></li>
+                </ul>
+            </div><!-- 바로가기-->
+        </div>
+        <div class="footer">
+        <div class="ft_logo"></div>
+        <div class="copyright">COPYRIGHT &copy; 2021 JUST Shoppingmall. ALL RIGHT RESERVED. </div>
+        <ul class="sns">
+            <li><a href="#"><img src="./images/icon1.png" alt="블로그"></a></li>
+            <li><a href="#"><img src="./images/icon2.png" alt="트위터"></a></li>
+            <li><a href="#"><img src="./images/icon3.png" alt="페이스북"></a></li>
+        </ul>
+        </div>
+        <div id="popup">
+            <div class="popWrap">
+                    <h2 class="popTitle">공지사항1</h2>
+                    <p class="popContent">공지사항1내용입니다. 공지사항1내용입니다. 공지사항1내용입니다. 공지사항1내용입니다. 공지사항1내용입니다. 공지사항1내용입니다.</p>
+                    <a href="#" class="popClose">닫기</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/* 초기화 */
+*{margin: 0;padding: 0;}
+body,html{width: 100%;height: 100%;font-family: "돋움",Dotum,arial,sans-serif;color: #222328;}
+ul{list-style: none;}
+a{text-decoration: none;}
+input,button{outline:0; border: 0;}
+
+/*구역별 크기 설정 */
+#wrap{width: 1200px;margin: 0 auto;overflow: hidden;}
+.header{width: 1200px;height: 100px;overflow: visible;position: relative;}
+.slide{width: 1200px;height: 300px;overflow: hidden;position: relative;}
+.content{width: 1200px;height: 200px;overflow: hidden;position: relative;}
+.footer{width: 1200px;height: 100px;overflow: hidden;position: relative;}
+
+/*header영역*/
+.logo{display: block;width: 200px;height: 40px;float: left;margin-top: 30px;}
+#gnb{width: 600px;height: auto;border: 1px solid #666;position: absolute;right: 0;top: 30px;z-index: 10;}
+#gnb li{float: left;width: 150px;}
+#gnb li a{display: block;line-height: 40px;text-align: center;font-size: 14px;font-weight: 600;}
+#gnb li a.dep1{color: #333;background-color: #fff;border-right: 1px solid #666;}
+#gnb > .menu > li:last-of-type a.dep1{border-right: 0;}
+#gnb .sub{border-top:1px solid #666;transition-duration: 0.1s,0.5s;transition-property: height, opacity;height: 0;opacity: 0; overflow: hidden;}
+#gnb:hover .sub{height: 160px;opacity: 1;}
+#gnb .sub a{color: #333;background: #fff;}
+#gnb .sub a:hover{background: #333;color: #fff;}
+
+/* 슬라이드 영역 */
+.slide .ban{clear: both;}
+.ban li{clear: both;width: 1200px;height: 300px;}
+.ban li img{display: block;width: 1200px;height: 300px;}
+
+/* 콘텐츠 영역*/
+.col4{width: 33.33333%;height: 200px;float: left;}
+.col6{width: 25%;float: left;}
+.tabBtnBox{background: #ccc;}
+.tabBtn{display: block;width: 90px;line-height: 40px;margin-top: 15px;float: left;font-size: 14px;font-weight: 600;border: 1px solid #333;background: #ccc;cursor: pointer;text-align: center;position: absolute;z-index: 2;}
+.tabBtn.item1{border-right: 0;}
+.tabBtn.item2{left: 91px;}
+.tabConBox{/*clear: both;*/position: relative;}
+.tabCon{display:none; clear: both; border:1px solid #333;  position:absolute; left: 0;top:56px; z-index:0;}
+.raItem{display: none;}/* 라디오버튼 안보이게*/
+
+#ra1:checked ~ .tabConBox .tabCon.item1{display: block;}
+#ra2:checked ~ .tabConBox .tabCon.item2{display: block;}
+#ra1:checked ~ .tabBtnBox .tabBtn.item1{border-bottom-color: #fff;background: #fff;}
+#ra2:checked ~ .tabBtnBox .tabBtn.item2{border-bottom-color: #fff;background: #fff;}
+
+.noti, .gal{clear: both;height: 140px;}
+.noti th,.noti td{line-height: 24px;font-size: 14px;}
+.noti th{text-align: center;background: #CCC;}
+.nTit{width: 280px;}
+.nDate{width: 110px;text-align: center;color: #222328;}
+td.nTit{text-indent: 15px;color: #222328;}
+td.nTit a{display: block;color: #222328;}
+
+.gal{padding: 12px;box-sizing: border-box;overflow: hidden;}
+.gal li{float: left;}
+
+.conTitle{line-height: 36px;text-align: center;}
+.banImg{text-align: center;}
+.banImg img{width: 180px;height: auto;}
+
+.shortcut{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;height: 142px;padding-top: 10px;}
+.shortcut a{text-align: center;display: block;color: #ccc;}
+.shortcut a img{display: block;width: 90px;height: auto;margin: 0 auto;}
+
+/* 푸터영역*/
+.ft_logo{position: absolute;top: 0;left: 0;z-index: 1;width: 200px;height: 100px;background-image: url(../images/ft_logo.png);background-repeat: no-repeat;background-position: center center;}
+.copyright{background: #ddd;text-align: center;line-height: 100px;border-top: 2px solid #222328;color: #222328;font-weight: bold;font-size: 14px;}
+.sns{width: 300px;height: 100px;position: absolute;right: 0;top: 0;}
+.sns li{float: left;width: 100px;height: 100px;}
+.sns li a{display: block;line-height: 100px;}
+
+/*팝업창*/
+#popup{width: 100%;height: 100%;position: fixed;top: 0;left: 0;z-index: 999;display: none;}
+#popup:target{display: block;}
+.popWrap{width: 400px;height: 300px;margin: 150px auto;position: relative;border: 1px solid #333;box-shadow: 0 0 6px #000;background: #fff;}
+.popTitle{background: #333;color: #fff;line-height: 40px;text-indent: 15px;}
+.popContent{padding: 30px;font-size: 14px;color: #222238;}
+.popClose{display: block;width: 60px;height: 32px;background: #333;color: #fff;text-align: center;line-height: 32px;font-size: 14px;font-weight: bold;position: absolute;bottom: 15px;right: 15px;z-index: 999;}
+
+
